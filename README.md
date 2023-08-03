@@ -9,7 +9,7 @@ O projeto frontend "Construindo uma Aplicação com React e API do Mercado Livre
     <div style="display: flex;">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="30" height="30" alt="React"/>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="40" height="40" alt="SASS"/>
-        <img src="https://logospng.org/wp-content/uploads/vite-js-logo.png" width="30" height="30" alt="Vite"/> 
+        <img src="https://logospng.org/download/vite-js/vite-js-4096-logo.png" width="30" height="30" alt="Vite"/> 
     </div>
 </div>
 
