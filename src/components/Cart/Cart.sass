@@ -1,0 +1,62 @@
+.cart
+  width: 100%
+  max-width: 350px
+  background: #fff
+  height: 100vh
+  position: fixed
+  top: 0
+  right: 0
+  padding: 0 20px
+  transition: .6s all ease
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  overflow: auto
+  transform: translateX(110%)
+  .cart__introduction
+    padding: 1.3rem
+    font-size: 1.8rem
+    font-weight: 600
+    font-family: Edu SA Beginner
+    text-align: center
+  .cart__items
+    flex-grow: 1
+  .cart__value
+    margin: 1rem
+    font-size: 1.4rem
+    font-weight: 500
+    padding: 1.5rem 0 1rem
+    border-top: 1px solid #a2a2a2
+  .cart-item
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    border-bottom: 1px solid #ddd
+    padding-bottom: 1rem
+    margin-bottom: 1rem
+    position: relative
+    &:last-child
+      border: none
+    .cart-item-image
+      width: 4rem
+    .cart-item-title
+      font-size: .85rem
+      font-weight: 500
+      color: rgba(0, 0, 0, 0.5)
+      margin-bottom: .5rem
+    .cart-item-price
+      font-weight: 500
+      font-size: 1.1rem
+    .cart-item-info
+      padding: 0 1rem 0 .6rem
+    .button-remove-item
+      position: absolute
+      top: 0
+      right: -7px
+      color: #d83232
+      font-size: 1.2rem
+      border: none
+      background: none
+      cursor: pointer
+.active-cart
+  transform: translateX(0)
