@@ -1,8 +1,16 @@
-# React + Vite
+Título do Projeto:
+Construindo uma Aplicação Frontend com React e API do Mercado Livre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descrição:
+O projeto frontend "Construindo uma Aplicação com React e API do Mercado Livre" é uma iniciativa com o intuito de criar uma plataforma interativa para busca e exibição de produtos diretamente do Mercado Livre. Através do uso  do SASS para estilização e da biblioteca React e os versáteis hooks, o objetivo é criar uma interface de usuário responsiva e amigável, permitindo que os usuários encontrem facilmente os produtos que desejam com suas variadas informações que é disponibilizado pela integração da API do Mercado Livre.
 
-Currently, two official plugins are available:
+<div>
+    <h3>Tecnologias utilizadas:</h3>
+    <div style="display: flex;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="30" height="30" alt="React"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="40" height="40" alt="SASS"/>
+        <img src="https://logospng.org/wp-content/uploads/vite-js-logo.png" width="30" height="30" alt="Vite"/> 
+    </div>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Deploy: 
