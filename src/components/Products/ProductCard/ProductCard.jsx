@@ -1,14 +1,11 @@
 import { BsFillCartPlusFill } from "react-icons/bs";
 import propTypes from "prop-types";
 import formatCurrency from "../../../utils/formatCurrency";
-import { useContext } from "react";
-import { AppContext } from "../../../context/AppContext";
+import { useCart } from 'react-use-cart'
 
 const ProductCard = ({ prod }) => {
-  const { cartItems, setCartItems } = useContext(AppContext);
 
-  const handleCartItem = () => setCartItems([...cartItems, prod]);
-
+  const {addItem} = useCart()
   return (
     <article className="product__item">
       <img
@@ -23,7 +20,7 @@ const ProductCard = ({ prod }) => {
       <button
         type="button"
         className="button__add-cart"
-        onClick={handleCartItem}
+        onClick={() => addItem(prod)}
       >
         <BsFillCartPlusFill />
       </button>

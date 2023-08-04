@@ -4,7 +4,7 @@ import Headroom from 'react-headroom'
 import './styles/app.sass'
 import { AppProvider } from './context/AppContext'
 import Cart from './components/Cart/Cart'
-
+import { CartProvider } from 'react-use-cart'
 
 const App = () => {
   
@@ -12,11 +12,13 @@ const App = () => {
   return (
     <> 
       <AppProvider>
-        <Headroom>
-          <Header />
-        </Headroom>
-        <Products />
-        <Cart />
+        <CartProvider>
+          <Headroom>
+            <Header />
+          </Headroom>
+          <Products />
+          <Cart />
+        </CartProvider>
       </AppProvider>
     </>
     

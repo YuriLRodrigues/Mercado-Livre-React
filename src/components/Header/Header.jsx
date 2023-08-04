@@ -1,10 +1,12 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AppContext } from "../../context/AppContext";
+import { useCart } from "react-use-cart";
 
 const Header = () => {
-  const {cartItems, setShowCart, showCart} = useContext(AppContext)
+  const {setShowCart, showCart} = useContext(AppContext)
+  const {totalItems} = useCart()
   
   return (
     <header>
@@ -12,7 +14,7 @@ const Header = () => {
         <SearchBar />
         <button className="cart__button" onClick={()=> setShowCart(!showCart)}>
           <AiOutlineShoppingCart />
-          {cartItems.length > 0 && <span className="cart__status">{cartItems.length}</span>}
+          {totalItems > 0 && <span className="cart__status">{totalItems}</span>}
         </button>
       </nav>
     </header>

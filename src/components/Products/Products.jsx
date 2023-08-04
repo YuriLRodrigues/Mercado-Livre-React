@@ -10,7 +10,7 @@ const Products = () => {
   const {products, setProducts} = useContext(AppContext)
   
   useEffect(()=> {
-    fetchProduct('iphone').then((res)=> {
+    fetchProduct('iphone 14 pro max').then((res)=> {
       setProducts(res)
     })
   }, [])
